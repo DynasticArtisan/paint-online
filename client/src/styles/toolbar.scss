@@ -1,0 +1,96 @@
+@import "./variables.scss";
+
+.toolbar,
+.settingsbar {
+  background-color: $toolbar-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+}
+.toolbar {
+  height: $toolbar-heigth;
+  top: 5px;
+  border-bottom: 2px solid rgba(18, 0, 173, 0.747);
+  border-top: 2px solid rgba(18, 0, 173, 0.747);
+
+  &__btn {
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: cover;
+  }
+  .brush {
+    background: url("../assets/img/brush.svg") no-repeat center center;
+  }
+  .brush.active {
+    background: url("../assets/img/brushActive.svg") no-repeat center center;
+  }
+  .rectangle {
+    background: url("../assets/img/rectangle.svg") no-repeat center center;
+  }
+  .rectangle.active {
+    background: url("../assets/img/rectActive.svg") no-repeat center center;
+  }
+  .ring {
+    background: url("../assets/img/ring.svg") no-repeat center center;
+  }
+  .ring.active {
+    background: url("../assets/img/ringActive.svg") no-repeat center center;
+  }
+  .remover {
+    background: url("../assets/img/remover.svg") no-repeat center center;
+  }
+  .remover.active {
+    background: url("../assets/img/removerActive.svg") no-repeat center center;
+  }
+  .line {
+    background: url("../assets/img/line.svg") no-repeat center center;
+  }
+  .line.active {
+    background: url("../assets/img/lineActive.svg") no-repeat center center;
+  }
+  .back {
+    background: url("../assets/img/back.svg") no-repeat center center;
+    margin-left: auto;
+  }
+  .repeat {
+    background: url("../assets/img/repeat.svg") no-repeat center center;
+  }
+  .save {
+    background: url("../assets/img/save.svg") no-repeat center center;
+  }
+}
+.settingsbar {
+  bottom: 0;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.setting {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.setting input {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+}
+.setting label {
+  margin: 5px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+}
+button:disabled {
+  opacity: 0.5;
+}

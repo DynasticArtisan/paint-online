@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.notifications {
+  position: absolute;
+  top: 75px;
+  right: 20px;
+}
+
+.notification-item {
+  background-color: $toolbar-color;
+  border: 2px solid rgba(18, 0, 173, 0.747);
+  color: #0185ff;
+  margin: 10px;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 10px;
+}

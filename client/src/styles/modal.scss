@@ -1,0 +1,43 @@
+.modal {
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(19, 3, 90);
+
+  &-card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    border-radius: 10px;
+  }
+  &-header {
+    font-size: 30px;
+  }
+  input {
+    margin: 15px 0;
+    padding: 2px 4px;
+    background-color: #f1f1ff;
+    border: 1px solid gray;
+    outline: none;
+    offset: none;
+  }
+  &-button {
+    background-color: rgb(19, 3, 90);
+    color: #fff;
+    padding: 4px 8px;
+    border: none;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    transition: all 0.2s;
+  }
+  &-button:hover {
+    transform: scale(1.1);
+  }
+}
